@@ -391,9 +391,7 @@ input[type="radio"].visually-hidden {
     line-height: 40px;
     margin-bottom: 10px;
   }
-  .cards__item:nth-last-child(-n+5) {
-    margin-top: 30px;
-  }
+  
   .promo {
     background-position: bottom 10px right 10px;    
     text-align: left;
@@ -453,7 +451,12 @@ input[type="radio"].visually-hidden {
     order: 3;
   }
 }
+@media (max-width: 767px) {
+  .cards__item:nth-last-child(-n+5) {
+    margin-top: 30px;
+  }
 
+}
 
 @media (min-width: 768px) {
   .container {
@@ -472,7 +475,91 @@ input[type="radio"].visually-hidden {
     line-height: 40px;
     margin-bottom: 10px;
   }
-  .cards__item:nth-last-child(-n+5) {
+  
+  .promo {
+    background-position: bottom 10px right 10px;    
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .promo__title {
+    font-size: 28px;
+  }
+  .promo__description {
+    font-size: 17px;
+  }
+  .restaurants__title {
+    margin-bottom: 10px;
+  }
+  .restaurants__heading {
+    margin: 15px;
+  }
+  .cards__description {
+    padding: 20px 10px 25px 10px;
+  }
+  .cards__item {
+    flex: 0 0 300px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer__menu-item+.footer__menu-item {
+    margin-top: 10px;
+  }
+  .footer__menu {
+    margin-bottom: 15px;
+  }
+  .footer__social-svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-gray);
+  }
+  .footer>.logotype {
+    order: 1;
+  }
+  .footer__menu-link {
+    color: var(--color-gray);
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .footer__social {
+    margin-bottom: 20px;
+  }
+  .buttons {
+    order: 2;
+    margin-bottom: 10px;
+  }
+  .logotype {
+    order: 1;
+  }
+  .search-input {
+    order: 3;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cards__item:nth-last-child(-n+4) {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+  .header {
+    padding: 40px 0 0 0;
+  }
+  .logotype {
+    margin-bottom: 10px;
+  }
+  .input {
+    min-width: 400px;
+  }
+  .search-input {
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .cards__item:nth-last-child(-n+3) {
     margin-top: 30px;
   }
   .promo {
@@ -496,7 +583,7 @@ input[type="radio"].visually-hidden {
     padding: 20px 10px 25px 10px;
   }
   .cards__item {
-    flex: 0 0 350px;
+    flex: 0 0 300px;
   }
   .footer {
     text-align: center;
