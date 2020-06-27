@@ -194,10 +194,14 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
-.restaurants__title {
-  margin-bottom: 10px;
+.restaurants__heading-second {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  
 }
+
 .restaurants__input-wrp {
   text-align: center;
   width: 100%;
@@ -218,13 +222,65 @@ input[type="radio"].visually-hidden {
   fill: var(--color-gray);
 }
 
+.restaurants__heading-rating {
+  position: relative;
+}
+.restaurants__heading-info {
+  display: flex;
+}
+.restaurants__heading-quantity {
+  color: var(--color-gold);
+  position: relative;
+  font-size: 20px;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+.restaurants__heading-price {
+  color: var(--color-gray);
+  font-size: 20px;
+  margin-right: 10px;
+
+
+}
+.restaurants__heading-caregory {
+  color: var(--color-gray);
+  position: relative;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.restaurants__heading-caregory::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.restaurants__heading-svg {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--color-gold);
+}
+
 /* cards */
 .cards {  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+.cards__text {
+  padding: 10px 10px 20px 10px;
+}
+.cards__description-second {
+  color: var(--color-gray);
+}
 .cards__item {
   background-color: var(--color-white);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -233,11 +289,17 @@ input[type="radio"].visually-hidden {
   flex: 0 0 90%;
 }
 .cards__image {
-  min-width: 380px;
-  min-height: 250px;
+  width: 380px;
+  height: 250px;
   object-fit: cover;
 }
-
+.cards__title-second {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 10px;
+}
 .cards__heading {
   display: flex;
   flex-direction: column;
@@ -263,6 +325,12 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   font-weight: 600;
 }
+.cards__info-second {
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .cards__rating {
   color: var(--color-gold);
   position: relative;
@@ -271,13 +339,18 @@ input[type="radio"].visually-hidden {
 .cards__price {
   color: var(--color-gray);
 }
+.cards__price-second {
+  color: var(--color-gray);
+  font-size: 22px;
+  color: var(--color-black);
+  font-weight: 800;
+
+}
 .cards__category {
   color: var(--color-gray);
   position: relative;
   padding-left: 10px;
-  width: 35%;
 }
-
 .cards__description {
   padding: 20px 10px 25px 10px;
 }
@@ -301,6 +374,22 @@ input[type="radio"].visually-hidden {
   top: 50%;
   transform: translateY(-50%);
   fill: var(--color-gold);
+}
+.cards__button {
+  padding: 5px 35px 5px 15px;
+  position: relative;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.cards__button-svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--color-white);
+  
 }
 
 .footer__menu {
@@ -344,17 +433,14 @@ input[type="radio"].visually-hidden {
   .cards__item:nth-last-child(-n+5) {
     margin-top: 30px;
   }
-  .promo {
-    background-position: bottom 10px center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
+  
   .footer>.logotype {
     order: 1;
   }
   .footer__social {
     margin-bottom: 20px;
   }
+  
 }
 
 
@@ -373,6 +459,7 @@ input[type="radio"].visually-hidden {
   .footer__social {
     margin-bottom: 20px;
   }
+  
 }
 @media (min-width: 500px) {
   .promo__title {
@@ -381,9 +468,11 @@ input[type="radio"].visually-hidden {
   .promo__description {
     font-size: 30px;
   }
-  .promo {
-    padding: 40px 20px 220px 40px;
+  .restaurants__title {
+    margin-right: 10px;
   }
+  
+  
 }
 @media (max-width: 767px) {
   .cards__item:nth-last-child(-n+5) {
@@ -391,6 +480,13 @@ input[type="radio"].visually-hidden {
   }
   .cards__item {
     flex: 0 1 370px;
+  }
+  .promo {
+    background-position: bottom 10px center;
+    background-image: none;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px 20px;
   }
 
 }
@@ -404,6 +500,7 @@ input[type="radio"].visually-hidden {
     text-align: left;
     margin-bottom: 50px;
     background-size: 300px;
+    padding: 40px 20px 200px 40px;
   }
   .cards__item {
     flex: 0 0 300px;
@@ -413,6 +510,10 @@ input[type="radio"].visually-hidden {
   }
   .footer__social {
     margin-bottom: 20px;
+  }
+  .restaurants__heading-second {
+    flex-direction: row;
+    padding: 0 30px 0 30px;
   }
 }
 
