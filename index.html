@@ -15,15 +15,24 @@
     <header class="header " id="header">
       <a href="#" class="logotype">delivery</a>
       <input type="text" placeholder="адрес доставки" class="input search-input">
+
+      <p class="user-name"></p>
       <div class="buttons">
-        <button class="button button__primary">
+        <button class="button button-basket">
+          <svg class=" button__svg button__svg-shopping">
+            <use href="./images/icons/sprite.svg#shopping-cart-white"></use>
+          </svg>корзина
+        </button>
+        <button class="button button__primary button-auth">
           <svg class="button__svg button__svg-user">
             <use href="./images/icons/sprite.svg#user"></use>
-          </svg> войти</button>
-        <button class="button">
-          <svg class="button__svg button__svg-shopping">
-            <use href="./images/icons/sprite.svg#shopping-cart-white"></use>
-          </svg>корзина</button>
+          </svg> войти
+        </button>
+        <button class="button button__primary button-logout">
+          <svg class="button__svg button__svg-user">
+            <use href="./images/icons/sprite.svg#logout"></use>
+          </svg> выйти
+        </button>
       </div>
     </header>
   </div>
@@ -182,6 +191,145 @@
       </ul>
     </footer>
   </div>
+  <!-- корзина -->
+  <div class="modal modal__basket">
+    <div class="modal__window">
+      <div class="modal__header">
+        <h2 class="modal__title">Корзина</h2>
+        <button class="modal__button-close">
+          <svg class="modal__svg">
+            <use href="./images/icons/sprite.svg#icon-cancel-circle"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__item">
+        <div class="modal__row">
+          <span class="modal__row-title">Ролл угорь стандартный</span>
+          <strong class="modal__row-price">65 грн.</strong>
+          <div class="modal__row-counter">
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <span class="counter">1</span>
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal__row">
+          <span class="modal__row-title">Ролл угорь стандартный</span>
+          <strong class="modal__row-price">65 грн.</strong>
+          <div class="modal__row-counter">
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <span class="counter">1</span>
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal__row">
+          <span class="modal__row-title">Ролл угорь стандартный</span>
+          <strong class="modal__row-price">65 грн.</strong>
+          <div class="modal__row-counter">
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <span class="counter">1</span>
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal__row">
+          <span class="modal__row-title">Ролл угорь стандартный</span>
+          <strong class="modal__row-price">65 грн.</strong>
+          <div class="modal__row-counter">
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <span class="counter">1</span>
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal__row">
+          <span class="modal__row-title">Ролл угорь стандартный</span>
+          <strong class="modal__row-price">65 грн.</strong>
+          <div class="modal__row-counter">
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <span class="counter">1</span>
+            <button class="counter-button">
+              <svg class="counter-button__svg">
+                <use href="./images/icons/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <span class="modal__price">365 грн.</span>
+        <div class="modal__footer-buttons">
+          <button class="modal__button blue">оформить заказ</button>
+          <button class="modal__button">отмена</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Авторизация -->
+  <div class="modal modal__auth">
+    <div class="modal__window modal__window-auth">
+      <div class="modal__header">
+        <h2 class="modal__title modal__title-auth">Авторизация</h2>
+        <button class="modal__button-close-auth">
+          <svg class="modal__svg">
+            <use href="./images/icons/sprite.svg#icon-cancel-circle"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__item">
+        <form id="logInForm">
+          <div class="modal__row">
+            <span class="modal__row-title">Логин</span>
+            <input id="login" type="text" class="modal__row-input">
+          </div>
+          <div class="modal__row">
+            <span class="modal__row-title">Пароль</span>
+            <input id="password" type="password" class="modal__row-input">
+          </div>
+          <button type="submit" class="modal__button blue">Войти</button>
+          <button class="modal__button">отмена</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+
 
 </body>
 

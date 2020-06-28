@@ -112,6 +112,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid var(--color-gray);
   border-radius: 5px;
   height: 40px;
+  max-width: 350px;
   width: 80%;
   line-height: 32px;
   border-radius: 5px;
@@ -150,6 +151,20 @@ input[type="radio"].visually-hidden {
 }
 .button__svg-user {
   fill: var(--color-white)
+}
+.button-logout {
+  display: none;
+}
+.button-auth {
+  /* display: none; */
+}
+.user-name {
+  font-weight: 600;
+  font-size: 20px;  
+  max-width: 150px;
+  display: inline-table;
+  order: 2;
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .buttons {
@@ -428,7 +443,7 @@ input[type="radio"].visually-hidden {
   margin-left: 10px;
 }
 
-.modal {
+.modal, .modalAuth {
   position: fixed;
   left: 0;
   top: 0;
@@ -463,9 +478,12 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 36px;
 }
-.modal__button-close {
+.modal__button-close, 
+.modal__button-close-auth {
   background: none;
   border: none;
+  display: flex;
+  align-items: center;
 }
 .modal__svg {
   width: 25px;
@@ -548,6 +566,16 @@ input[type="radio"].visually-hidden {
   color: var(--color-white);
 }
 
+/* authorization */
+.modal__row-input {
+  width: 50%;
+  height: 25px;
+  border: 2px solid var(--color-gray);
+  border-radius: 5px;
+}
+.modal__window-auth {
+  min-height: 300px;
+}
 /*------------------------- media --------------------------- */
 @media (max-width: 424px) {
   
@@ -563,7 +591,9 @@ input[type="radio"].visually-hidden {
   .modal__row {
     flex-wrap: wrap;
   }
-  
+  .modal__title-auth {
+    font-size: 25px;
+  }
 }
 
 
@@ -653,7 +683,9 @@ input[type="radio"].visually-hidden {
   .cards__item:not(:nth-child(-n+2)) {
     margin-top: 30px;
   }
-  
+  .user-name {
+    margin-bottom: 10px;
+  }  
   .footer__menu-item+.footer__menu-item {
     margin-top: 10px;
   }  
@@ -675,6 +707,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1024px) {
   .cards__item:not(:nth-child(-n+3)) {
     margin-top: 30px;
+  }
+  .user-name {
+    order: 3;
   }
   .container {
     width: 1000px;
