@@ -284,6 +284,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* cards */
+
 .cards {  
   display: flex;
   flex-wrap: wrap;
@@ -790,4 +791,8 @@ input[type="radio"].visually-hidden {
     flex: 0 0 350px;
   }
   
+}
+
+.hide {
+  display: none;
 }
