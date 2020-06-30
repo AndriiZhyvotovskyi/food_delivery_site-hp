@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pl01",
+    "name": "Мясная",
+    "description": "Пицца соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
+    "price": 685,
+    "image": "images/pizza-light/meet.jpg"
+  },
+  {
+    "id": "pl02",
+    "name": "Маргарита",
+    "description": "Пицца соус, сыр Моцарелла, томат",
+    "price": 693,
+    "image": "images/pizza-light/margarita.jpg"
+  },
+  {
+    "id": "pl03",
+    "name": "Пепперони",
+    "description": "Пицца соус, пепперони, сыр Моцарелла",
+    "price": 595,
+    "image": "images/pizza-light/pepperoni.jpg"
+  },
+  {
+    "id": "pl04",
+    "name": "Семь сыров",
+    "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
+    "price": 785,
+    "image": "images/pizza-light/seven-cheeses.jpg"
+  },
+  {
+    "id": "pl05",
+    "name": "Том Ям",
+    "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
+    "price": 695,
+    "image": "images/pizza-light/tom-yam.jpg"
+  },
+  {
+    "id": "pl06",
+    "name": "Норвежская",
+    "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
+    "price": 875,
+    "image": "images/pizza-light/norwegian.jpg"
+  }
+]
