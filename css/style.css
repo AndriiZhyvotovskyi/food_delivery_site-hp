@@ -402,7 +402,6 @@ input[type="radio"].visually-hidden {
 .cards__button:hover .cards__button-svg {
   fill: var(--color-blue);
 }
-
 .cards__button {
   padding: 5px 35px 5px 15px;
   position: relative;
@@ -424,7 +423,7 @@ input[type="radio"].visually-hidden {
   top: 50%;
   transform: translateY(-50%);
   fill: var(--color-white);
-  transition: all .3s linear;  
+  
 }
 
 .footer__menu {
@@ -760,6 +759,7 @@ input[type="radio"].visually-hidden {
     order: 2;
     margin-left: 30px;
     margin-right: auto;
+
   }
   .input {
     width: 50%;

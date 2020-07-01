@@ -26,6 +26,7 @@ const modalPrice = document.querySelector('.modal__price');
 const modalClear = document.querySelector('.modal__clear');
 
 
+
 let login = localStorage.getItem('memberName');
 
 const basket = [];
@@ -79,7 +80,6 @@ function autorized() {
   console.log('авторизован');
   userName.textContent = login; // присвоение контента с login
   buttonBasket.style.display = 'inline';
-
 
   buttonAuth.style.display = 'none'; //присвоение стиля кнопке после авторизации
   buttonLogout.style.display = 'inline';
@@ -280,11 +280,11 @@ function renderBasket() {
   }, 0);
 
   modalPrice.textContent = totalPrice + ' грн.';
+
 }
 
-
-
 function changeCount(event) {
+  const target = event.target;
 
   if (target.classList.contains('counter-button')) {
     const food = basket.find(function (item) {
@@ -299,7 +299,6 @@ function changeCount(event) {
     if (target.classList.contains('counter-plus')) food.count++;
     renderBasket();
   }
-
 }
 
 function init() {
@@ -331,8 +330,6 @@ function init() {
 
   cardsMenu.addEventListener('click', addToBasket);
 
-
-
   cardsRestaurants.addEventListener('click', openGoods);
 
   logotype.addEventListener('click', function () {
@@ -346,5 +343,3 @@ function init() {
 }
 
 init();
-
-
