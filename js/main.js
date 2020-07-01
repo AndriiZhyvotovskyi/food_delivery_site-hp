@@ -282,32 +282,7 @@ function renderBasket() {
   modalPrice.textContent = totalPrice + ' грн.';
 }
 
-function colorBasket() {
 
-  const food = basket.find(function (item) {
-    item === 0;
-  });
-
-  console.log(food)
-
-  if (target.classList.contains('counter-button')) {
-    const food = basket.find(function (item) {
-      return item.id === target.dataset.id;
-    });
-    if (target.classList.contains('counter-minus')) {
-      food.count--;
-      if (food.count === 0) {
-        basket.splice(basket.indexOf(food), 1);
-      }
-    };
-    if (target.classList.contains('counter-plus')) food.count++;
-    renderBasket();
-  }
-
-
-  if (itemBasket != '') buttonBasket.style.backgroundColor = 'red';
-
-}
 
 function changeCount(event) {
 
