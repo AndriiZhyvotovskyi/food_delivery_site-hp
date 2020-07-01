@@ -155,9 +155,6 @@ input[type="radio"].visually-hidden {
 .button-logout {
   display: none;
 }
-.button-auth {
-  /* display: none; */
-}
 .user-name {
   font-weight: 600;
   font-size: 20px;  
